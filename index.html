@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="jquery/jquery-ui.css" rel="stylesheet">
+    <title>Weather API.dbb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" width="75px" height="75px">
+            <span>Weather API.dbb</span>
+        </div>
+        <div class="headerMenu ">
+        </div>
+    </header>
+    <div class="subHeader"></div>
+
+
+
+    <div class="contenido">
+
+        <h2>Informacion sobre Weather API.dbb</h2><br>
+
+        <span>Weather API.dbbes una aplicación web creada por Daniel Barrera Báez. Esta página, mediante peticiones asíncronas a la API de OpenWeather, obtiene información meteorológica en tiempo real de cualquier ubicación del mundo. Está desarrollada en JavaScript y accede a una API programada en PHP. Las peticiones asíncronas se realizan con AJAX, y los datos se muestran en la página con ayuda de JQuery UI. Esta aplicación no pretende ser compleja; es simplemente una muestra de parte de mi formación.</span><br><br>
+
+        <div id="accordion">
+            <h3>Datos meteorológicos</h3>
+            <div><span>
+                    Estamos proporcionando productos meteorológicos altamente reconocibles
+                    que facilitan el trabajo con los datos meteorológicos. Trabajamos con millones de
+                    desarrolladores las 24 horas del día y creemos que estos beneficios pueden ser adecuados
+                    para la mayoría de las aplicaciones, hasta los sistemas empresariales complejos.
+                </span><br><br>
+
+                <ul>
+                    <li>Una gama de productos meteorológicos listos para usar</li>
+                    <li>Pronósticos del dia de hoy con alta precision.</li>
+                    <li>Cualquier ubicación en el mundo</li>
+                </ul><br>
+
+                <span>
+                    Se puede acceder a nuestros productos meteorológicos a través de API rápidas y confiables que
+                    siguen los estándares de la industria y son compatibles con diferentes tipos de sistemas empresariales.
+                    Todos nuestros productos contienen variables climáticas esenciales para cualquier ubicación. Además
+                    de eso, tenemos algunos productos especiales que son útiles para las industrias que se ven afectadas
+                    por las condiciones climáticas, por ejemplo, Road Risk API , Solar Radiation API , etc.
+                </span>
+            </div>
+
+            <h3>Modelo de PNT de clima abierto</h3>
+            <div>
+                <span>
+                    Openweather NWP (predicción meteorológica numérica) permite calcular los datos meteorológicos para cualquier
+                    ubicación. Utilizamos una red neuronal convolucional patentada que recopila y procesa una amplia gama de
+                    fuentes de datos para cubrir cualquier ubicación y considerar los matices locales del clima. La tecnología
+                    ML nos permite alcanzar una resolución de unos 500 my una precisión muy alta entre el 90 % y el 100 % con
+                    una imprecisión de alrededor del 1 %. Entre las fuentes de datos que alimentamos al NWP se encuentran 82.000
+                    estaciones meteorológicas repartidas por todo el mundo; agencias meteorológicas nacionales (NOAA, Environment
+                    Canada, Met Office, etc.), radares, satélites meteorológicos.
+                </span>
+            </div>
+
+            <h3>Productos OpenWeather</h3>
+            <div>
+                <span>
+                    Para cada punto del globo, OpenWeather proporciona pronóstico hiperlocal por minutos, datos históricos,
+                    estado actual y datos meteorológicos de corto plazo a anuales y pronosticados. Todos los datos están
+                    disponibles a través de las API estándar de la industria .
+                </span><br><br>
+
+                <h3>API de una llamada por llamada :</h3>
+                <span>
+                    Este producto permite a los usuarios recibir todos los datos meteorológicos esenciales para una ubicación
+                    específica haciendo solo una llamada a la API. One Call 3.0 incluye los siguientes datos:
+                </span><br><br>
+
+                <ul>
+                    <li>Clima actual</li>
+                    <li>Alertas meteorológicas nacionales</li>
+                    <li>Datos meteorológicos históricos de más de 40 años atrás</li>
+                </ul><br>
+            </div>
+        </div><br><br>
+
+
+        <div id="controlgroup">
+            <input type="text" class="ciudad" name="poblacion" id="poblacion">
+            <button class="buscar" id="enviar">Consultar tiempo</button>
+        </div><br><br>
+
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Temperatura</a></li>
+                <li><a href="#tabs-2">Precipitaciones</a></li>
+                <li><a href="#tabs-3">Viento</a></li>
+                <li><a href="#tabs-4">Salida/Puesta del Sol</a></li>
+                <li><a href="#tabs-5">Humedad/Presion</a></li>
+            </ul>
+
+            <div id="tabs-1" class="t"></div>
+
+            <div id="tabs-2" class="p">
+                <div class="pContenido"></div>
+            </div>
+
+            <div id="tabs-3" class="v"></div>
+
+            <div id="tabs-4" class="s"></div>
+
+            <div id="tabs-5" class="h"></div>
+        </div>
+    </div>
+
+
+    <div class="prefooter"></div>
+    <footer>
+        <div class="f1">
+            <div>
+                <h3>Cliente</h3>
+                <ul>
+                    <li>Aplicaciones</li>
+                    <li>Consejos</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Trabajador</h3>
+                <ul>
+                    <li>Derechos y deberes</li>
+                    <li>Trabaja con nosotros</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sociedad</h3>
+                <ul>
+                    <li>Actualidad</li>
+                    <li>Sala de prensa</li>
+                    <li>Conoce Weather API.dbb</li>
+                    <li>Cuidamos del planeta</li>
+                </ul>
+            </div>
+        </div>
+        <div class="f2">
+            <div>© Weather API.dbb H4567545GD. Todos los derechos reservados.</div>
+            <div>
+                <span>Accesibilidad</span>
+                <span>Política de privacidad</span>
+                <span>Política de cookies</span>
+                <span>Términos y condiciones</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
